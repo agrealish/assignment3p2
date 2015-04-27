@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CS290 Assignment 3 Part 2</title>
+    <script src='gist.js'></script>
+  </head>
+  <body>
+    <section>
+      GitHub Gist Search:
+      <div>
+        <label>Number of Pages of Results (1-5):</label>
+        <input type="number" name="pages" min="1" max="5">
+      </div>
+      <div>
+        <label>Language (select):</label><br>
+        <input type="checkbox" name="pyt" value="Python">Python<br>
+        <input type="checkbox" name="json" value="JSON">JSON<br>
+        <input type="checkbox" name="js" value="JavaScript">JavaScript<br>
+        <input type="checkbox" name="sql" value="SQL">SQL<br>
+      </div>
+      <div>
+        <label>Gist Search:</label>
+        <input type="button" value="Search GitHub" onclick="getResults()">
+      </div>
+    </section>      
+      <div id="gist-list">
+      <br> Search Results
+      </div>
+    <section>
+      <div id="favorite-list">
+      <br>Favorite List
+      </div>
+    </section>
+  </body>
+</html>
